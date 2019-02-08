@@ -1,6 +1,6 @@
 /*
 Fork Exercise:
-try to create a process that has 10 child processes
+try to create a process that has 10 child processes with the same parent ID
 */
 
 #include <stdio.h>

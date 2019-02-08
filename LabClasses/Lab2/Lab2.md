@@ -33,3 +33,5 @@ int main () {
 ```
 
 Now there are 4 total processes, 2 parents and 3 children.
+
+Checkout the Fork Exercise in fork.c
