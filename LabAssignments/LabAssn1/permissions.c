@@ -63,7 +63,6 @@ void check_all_permissions(char* filepath){
 
 /*
 * Creates and opens a new file.
-* @param filepath - the file to check permissions
 */
 int new_destination(){
   int fd;

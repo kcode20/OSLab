@@ -8,8 +8,8 @@
 
 /*
 * This function copies a file from one place over to another
-* @param argc - the argument count
-* @param argv - an array of all the arguments
+* @param source - pointer to the source file
+* @param destination - pointer to the destination file
 */
 int cp(char* source, char* destination){
   errno = 0;
