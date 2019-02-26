@@ -1,0 +1,13 @@
+Explanation for values: 
+
+- a: 10, b: 30, process_id:processP.pid
+  This is the initial parent (Process P). It's value for a is 10. However, since it is a parent it enters the else clause since fq!=0. So it's value of b=a+b-5=10+25-5=30.
+
+- a: 35, b: 25, process_id:processQ.pid
+  This is Process Q. It is the child of Process P. Because it is the child fq==0 and it enters within the if statement. a=10+25=35, b=25. 
+
+- a: 35, b: 45, process_id:child2.pid
+  This is also Process Q, because there is a fork statement it became a parent of Process R, fr!=0 so it enters the if statement. a is still 35. b=25+20=45
+
+- a: 905, b: 25, process_id:child3.pid
+  This is process R, the child of Process Q. Since it is the child fr==0, it enters the else statement: a=(25*30)+30=905, b=25
