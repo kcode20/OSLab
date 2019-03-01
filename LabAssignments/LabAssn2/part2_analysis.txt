@@ -6,8 +6,10 @@ Explanation for values:
 - a: 35, b: 25, process_id:processQ.pid
   This is Process Q. It is the child of Process P. Because it is the child fq==0 and it enters within the if statement. a=10+25=35, b=25. 
 
-- a: 35, b: 45, process_id:child2.pid
+- a: 35, b: 45, process_id:ProcessQ.pid
   This is also Process Q, because there is a fork statement it became a parent of Process R, fr!=0 so it enters the if statement. a is still 35. b=25+20=45
 
-- a: 905, b: 25, process_id:child3.pid
+- a: 905, b: 25, process_id:ProcessR.pid
   This is process R, the child of Process Q. Since it is the child fr==0, it enters the else statement: a=(25*30)+30=905, b=25
+
+- The parent_id for all the processes except the first one is 1. This is the init process. This is happening because the parent processes are dying off before the children. The children become orphans and are assigned to the init process.
