@@ -41,8 +41,20 @@ Although we can use processes to get the sum, there are some benefits of threads
 - A new process is created, it has the same amount of threads as the parent process.
 - The only active thread in the newly created process will now be the thread that made the fork call. When you call fork() it starts the process from th at line.
 
+#### Supplemental Exercise
+
+In the exercise in the `thread_example.c` there are two functions that we call:
+
 ```c
 int pthread_create(pthread_t *thread, void *(* start_routine)(void*), void *arg);
 
 int pthread_join(pthread_t thread, void** retval)
 ```
+
+- pthread_create: creates a new thread.
+- pthread_join: this waits for the thread to be terminated.
+
+#### Useful Links
+
+http://man7.org/linux/man-pages/man3/pthread_create.3.html
+http://man7.org/linux/man-pages/man3/pthread_join.3.html
