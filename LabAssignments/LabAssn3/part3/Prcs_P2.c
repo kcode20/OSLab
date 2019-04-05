@@ -71,6 +71,7 @@ int cp(char* source){
       // switch toggle
       toggle = true;
     }
+    printf("This is my size: %d\n", size);
     }
 
   // Close documents

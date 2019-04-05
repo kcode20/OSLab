@@ -1,3 +1,5 @@
+# Threads
+
 Suppose we want to find the sum of the first n consecutive numbers
 Say n=1,000,000
 
