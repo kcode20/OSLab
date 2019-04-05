@@ -5,10 +5,10 @@
 
 /*
 * This function takes in a string and seperates it by space delimiters and stores this value in an array.
-* It returns an array of the elements of the given string.
 * @param input - string to be seperated
+* @return - an array of the elements of the given string.
 */
-int* split(char *input){
+int* split(char *input, int students){
 	char delim[] = " ";
     int count = 0;
     int grade[4];
@@ -38,15 +38,15 @@ int main (int argc, char *argv[]){
     size_t len = 0;
     ssize_t read;
     char c[1000];
-    int** grades;
+    int* grades;
+    int students = 10;
     int count=0;
 
     fp = fopen("quiz_grades.txt", "r");
     if (fp == NULL)
         exit(EXIT_FAILURE);
     while ((read = getline(&line, &len, fp)) != -1) {
-        grades[count] = split(line);
-        count ++;
+        grades[count] = split(line, students);
     }
 
     fclose(fp);
