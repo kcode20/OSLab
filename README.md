@@ -15,7 +15,7 @@ synchronization problems: issues of safety, liveness, and fairness. Deadlocks. M
 management and virtual memory. File management. I/O management and disk scheduling
 
 ### Quick Links
-- [Textbook](https://github.com/kcode20/OSLab/blob/master/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf)
+- [Textbook](https://github.com/kcode20/OSLab/blob/master/Operating%20System%20Concepts.pdf)
 - [Course Assignments](https://github.com/kcode20/OSLab/tree/master/CourseHomeworks)
   - [Assignment 1](https://github.com/kcode20/OSLab/tree/master/CourseHomeworks/HW1)
 - Course Notes
